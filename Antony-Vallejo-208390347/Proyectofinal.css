@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente principal para todo el cuerpo del documento */
+  background-color: #f4f4f4; /* Define un color de fondo gris claro para el body */
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  height: 100vh; /* Establece la altura al 100% del viewport (pantalla visible) */
+}
+
+.container {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: white; /* Establece un fondo blanco para el contenedor */
+  padding: 20px; /* Añade un espacio interno de 20 píxeles */
+  border-radius: 10px; /* Redondea las esquinas del contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave alrededor del contenedor */
+  max-width: 400px; /* Limita el ancho máximo del contenedor a 400 píxeles */
+  width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible, hasta el máximo */
+}
+
+.queue-container {
+  background-color: #f0f0f0; /* Define un color de fondo gris más claro para el contenedor de la cola */
+  padding: 20px; /* Añade un espacio interno de 20 píxeles */
+  border-radius: 8px; /* Redondea las esquinas */
+  margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: center; /* Centra horizontalmente los elementos de la cola */
+  align-items: flex-end; /* Alinea los elementos de la cola en la parte inferior */
+  height: 200px; /* Ajustar según la cantidad máxima de elementos en la cola */
+}
+
+.queue-element {
+  width: 40px; /* Establece el ancho de cada elemento de la cola */
+  height: 20px; /* Altura de cada elemento en la cola */
+  background-color: #4CAF50; /* Define un color de fondo verde para los elementos */
+  color: white; /* Establece el color del texto como blanco */
+  border-radius: 4px; /* Redondea ligeramente las esquinas de los elementos */
+  margin: 0 5px; /* Agrega un margen horizontal entre los elementos */
+  display: inline-block; /* Hace que los elementos se muestren en línea */
+}
+
+.controls {
+  display: flex; /* Utiliza flexbox para el diseño de los controles */
+  justify-content: center; /* Centra horizontalmente los controles */
+  align-items: center; /* Centra verticalmente los controles */
+  margin-top: 20px; /* Agrega un margen superior de 20 píxeles */
+}
+
+input[type="text"] {
+  padding: 8px; /* Añade un relleno interno al campo de texto */
+  margin-right: 10px; /* Agrega un margen derecho de 10 píxeles */
+  border: 1px solid #ccc; /* Define un borde gris claro */
+  border-radius: 4px; /* Redondea las esquinas del campo de texto */
+  font-size: 16px; /* Establece el tamaño de la fuente */
+  outline: none; /* Elimina el contorno al enfocar el campo */
+}
+
+button {
+  padding: 10px 20px; /* Añade relleno interno al botón */
+  background-color: #4CAF50; /* Establece un color de fondo verde */
+  color: white; /* Define el color del texto como blanco */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 4px; /* Redondea las esquinas del botón */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+}
+
+button:hover {
+  background-color: #45a049; /* Cambia el color de fondo cuando se pasa el cursor sobre el botón */
+}
